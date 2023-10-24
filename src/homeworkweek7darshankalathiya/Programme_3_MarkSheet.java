@@ -1,5 +1,11 @@
 package homeworkweek7darshankalathiya;
 
+/**
+ * Write programme that  print mark sheet and Calculate total and percentage
+ * Using if else statement and Determine result and grade
+ * also give grade.
+ */
+
 import java.util.Scanner;
 
 public class Programme_3_MarkSheet {

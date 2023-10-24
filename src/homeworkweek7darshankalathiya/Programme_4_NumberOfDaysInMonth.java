@@ -1,11 +1,19 @@
 package homeworkweek7darshankalathiya;
 
+/**
+ * Write a programme that check the year is leap or not
+ * Logic of leap year  = y/4=0 and y/100=0 or y/4=0
+ * Write a programme that check  if year is
+ * leap how-many days in month
+ */
+
 import java.util.Scanner;
 
 public class Programme_4_NumberOfDaysInMonth {
 
     public static boolean isLeapYear(int year) {
 
+        // check the year is leap or not
         if (year >= 1 && year <= 9999) {
             boolean isLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
             if (isLeapYear) {
@@ -17,11 +25,14 @@ public class Programme_4_NumberOfDaysInMonth {
             return  false;
         }
     }
+
+    // check the month and year number is in valid formant
     public static int getDaysInMonth(int month, int year) {
         if (month < 1 || month > 12 || year < 1 || year > 9999) {
             return -1;
         }
 
+        // switch month in day
         int days;
         switch (month) {
             case 2:
@@ -33,10 +44,11 @@ public class Programme_4_NumberOfDaysInMonth {
             default:
                 days = 31;
                 return days;
-        }
 
+        }
     }
 
+    // Main method
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Is leap year");

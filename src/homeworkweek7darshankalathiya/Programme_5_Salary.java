@@ -1,15 +1,17 @@
 package homeworkweek7darshankalathiya;
 
+/**
+ * Write programme that  print Salary sleep and Calculate HAR, DA, TA, PF, Gross Salary
+ */
 import java.util.Scanner;
-
+// Variable
 public class Programme_5_Salary {
-
     static float hra;
     static float da;
     static float ta;
     static float pf;
     static float grossSalary;
-
+// call variable
     public static void calculation(float basicSalary){
         hra = 10*basicSalary/100;
         da = 8*basicSalary/100;
@@ -18,7 +20,7 @@ public class Programme_5_Salary {
         grossSalary = basicSalary + hra + ta + da - pf;
 
     }
-
+// main method
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Employee ID :  ");
